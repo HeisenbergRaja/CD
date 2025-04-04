@@ -1493,3 +1493,18 @@ int main() {
 int yywrap() {
     return 1;
 }
+
+
+TYPE - 1
+
+flex filename.l
+gcc lex.yy.c
+a.exe
+
+
+TYPE - 2
+
+flex filename.l
+gcc lex.yy.c -o a
+a < cfilename.c
+
